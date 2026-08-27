@@ -1,0 +1,44 @@
+# Engenharia de Prompt - Fundamentos
+
+## Objetivo
+
+Esta atividade compara um prompt genérico com um prompt estruturado, demonstrando como a definição de papel, objetivo, contexto e formato pode melhorar a resposta de uma inteligência artificial.
+
+## 1. Prompt genérico
+
+> O que é Machine Learning?
+
+### Resposta obtida
+
+Machine Learning, ou aprendizado de máquina, é uma área da inteligência artificial que permite aos computadores aprender padrões a partir de dados. Em vez de receber instruções detalhadas para cada tarefa, o sistema utiliza exemplos para fazer previsões, classificações ou tomar decisões.
+
+Ele é usado em aplicações como sistemas de recomendação, reconhecimento de imagens, filtros de spam, assistentes virtuais e previsão de resultados.
+
+## 2. Prompt estruturado
+
+### Estrutura utilizada
+
+- **Papel:** professor.
+- **Objetivo:** explicar Machine Learning.
+- **Contexto:** explicação destinada a um iniciante.
+- **Formato:** dois parágrafos com uma analogia esportiva.
+
+### Prompt completo
+
+> Atue como um professor. Explique Machine Learning para um iniciante, usando uma analogia com esportes. Organize a resposta em dois parágrafos, utilizando linguagem simples.
+
+### Resposta obtida
+
+Imagine um jogador de futebol treinando cobranças de pênalti. A cada tentativa, ele observa o que funcionou, identifica seus erros e ajusta seus movimentos para melhorar. Machine Learning funciona de maneira parecida: um computador analisa muitos exemplos, reconhece padrões e modifica seu comportamento com base nos resultados obtidos.
+
+Depois desse treinamento, o computador pode utilizar o que aprendeu para lidar com situações novas. Por exemplo, assim como o jogador aprende a escolher onde chutar ao observar o goleiro, um sistema pode aprender a reconhecer mensagens de spam, recomendar filmes ou identificar objetos em fotografias.
+
+## 3. Análise crítica
+
+A resposta produzida pelo prompt estruturado foi mais útil porque apresentou uma explicação adequada ao nível de conhecimento do leitor. A definição de um papel orientou o tom didático, enquanto o contexto indicou que a resposta deveria ser destinada a uma pessoa iniciante. Além disso, a analogia com esportes tornou o conceito mais concreto e fácil de compreender.
+
+A estrutura reduziu a ambiguidade ao informar claramente o conteúdo esperado, o público, a abordagem e o tamanho da resposta. No prompt genérico, a inteligência artificial tinha liberdade para escolher o nível de complexidade e o formato. No prompt estruturado, os critérios definidos produziram uma resposta mais específica, organizada e alinhada ao objetivo da atividade.
+
+## Conclusão
+
+A comparação demonstra que prompts estruturados tendem a gerar respostas mais direcionadas. A combinação de papel, objetivo, contexto e formato ajuda a comunicar com precisão o resultado esperado.
