@@ -1,0 +1,692 @@
+# Atividade - Refinamento de Prompts
+
+---
+
+# Problema escolhido
+
+## Contexto
+
+A Programação Orientada a Objetos (POO) é um dos principais paradigmas utilizados no desenvolvimento de software. Ela está presente em diversas linguagens de programação, como Java, C++, C# e Python.
+
+Apesar de sua importância, alguns conceitos de POO podem ser difíceis para estudantes que estão iniciando seus estudos em programação. Termos como classe, objeto, atributo, método, herança e polimorfismo podem parecer abstratos quando são apresentados somente por meio de definições técnicas.
+
+Nesse contexto, uma IA generativa pode ser utilizada como ferramenta de apoio à aprendizagem, ajudando a explicar conceitos de diferentes maneiras, apresentar exemplos e adaptar a linguagem ao nível de conhecimento do estudante.
+
+## Problema
+
+O problema escolhido é **explicar os principais conceitos de Programação Orientada a Objetos para um estudante iniciante de Sistemas de Informação**, utilizando uma linguagem simples e exemplos que facilitem a compreensão.
+
+## Objetivo
+
+O objetivo é utilizar uma IA generativa para produzir uma explicação clara, organizada e didática sobre POO e, posteriormente, analisar como o refinamento dos prompts pode melhorar a qualidade da resposta.
+
+---
+
+# Prompt 1 - Versão inicial
+
+## Prompt
+
+> Explique o que é Programação Orientada a Objetos.
+
+## Resultado
+
+Programação Orientada a Objetos, ou POO, é um paradigma de programação que organiza o software utilizando objetos. Esses objetos representam entidades que possuem características e comportamentos.
+
+Os principais conceitos da POO incluem classes, objetos, atributos e métodos.
+
+Uma **classe** funciona como um modelo ou estrutura para criar objetos. Um **objeto** é uma instância de uma classe.
+
+Por exemplo, podemos ter uma classe chamada `Carro`. Ela pode possuir atributos como cor e modelo e métodos como acelerar e frear.
+
+A POO também possui conceitos como **encapsulamento**, **herança** e **polimorfismo**, que ajudam a organizar e reutilizar o código.
+
+A utilização de POO facilita a organização, manutenção e reutilização dos programas.
+
+## Primeira impressão
+
+### O que funcionou?
+
+O resultado apresentou uma definição correta e resumida de Programação Orientada a Objetos. Também citou os principais conceitos relacionados ao paradigma.
+
+### O que faltou?
+
+Faltaram exemplos mais detalhados, principalmente exemplos de código. Também seria interessante explicar cada conceito separadamente.
+
+### O que ficou genérico?
+
+A explicação sobre encapsulamento, herança e polimorfismo ficou muito superficial. Para um iniciante, somente mencionar esses conceitos não é suficiente para garantir sua compreensão.
+
+### O que poderia ser melhor?
+
+O prompt poderia informar quem é o público, qual nível de conhecimento possui e como a resposta deve ser apresentada.
+
+Além disso, poderia solicitar analogias do cotidiano e exemplos simples em Java.
+
+### A resposta seria adequada para um iniciante?
+
+Parcialmente. A resposta é simples, mas ainda utiliza conceitos que podem não ser conhecidos pelo estudante. Por isso, seria necessário um prompt mais específico.
+
+---
+
+# Prompt 2 - Primeiro refinamento
+
+## Alterações realizadas
+
+### Papel:
+
+A IA deverá atuar como um professor de programação com experiência em ensinar estudantes iniciantes.
+
+### Contexto:
+
+O estudante está cursando Sistemas de Informação e está começando a estudar Programação Orientada a Objetos.
+
+### Objetivo:
+
+Explicar POO de forma clara e facilitar a compreensão dos principais conceitos.
+
+### Público:
+
+Estudante iniciante de Sistemas de Informação, com pouco conhecimento prévio sobre POO.
+
+### Formato:
+
+A resposta deverá ser dividida em tópicos, utilizando explicações, analogias e exemplos de código.
+
+### Restrições:
+
+Evitar excesso de termos técnicos e não presumir conhecimento prévio.
+
+### Critérios:
+
+A resposta deverá ser clara, correta, organizada, didática e apresentar exemplos práticos.
+
+## Prompt
+
+> Atue como um professor de programação especializado em ensinar estudantes iniciantes.
+>
+> Explique Programação Orientada a Objetos (POO) para um estudante de graduação em Sistemas de Informação que possui pouco ou nenhum conhecimento prévio sobre o assunto.
+>
+> Utilize uma linguagem simples, clara e didática, evitando excesso de termos técnicos.
+>
+> Explique os seguintes conceitos:
+>
+> * classe;
+> * objeto;
+> * atributo;
+> * método;
+> * encapsulamento;
+> * herança;
+> * polimorfismo.
+>
+> Utilize exemplos do cotidiano para facilitar a compreensão e apresente exemplos simples de código em Java.
+>
+> Organize a resposta por tópicos e explique os conceitos de maneira progressiva, começando pelos mais básicos.
+>
+> Não presuma que o estudante já conhece Programação Orientada a Objetos.
+>
+> Ao final, faça um pequeno resumo dos principais conceitos.
+
+## Resultado
+
+### Introdução
+
+Programação Orientada a Objetos, conhecida como POO, é uma forma de desenvolver programas organizando o código em torno de **objetos**.
+
+Uma maneira simples de entender POO é imaginar objetos do mundo real.
+
+Por exemplo, podemos pensar em um **carro**. Um carro possui características, como cor, modelo e velocidade, e também possui comportamentos, como acelerar, frear e ligar.
+
+Na programação, podemos representar essas características e comportamentos por meio de uma classe.
+
+### Classe
+
+Uma classe pode ser entendida como um modelo utilizado para criar objetos.
+
+Por exemplo:
+
+```java
+class Carro {
+    String cor;
+    String modelo;
+
+    void acelerar() {
+        System.out.println("O carro está acelerando.");
+    }
+}
+```
+
+Nesse exemplo, `Carro` é uma classe.
+
+### Objeto
+
+Um objeto é uma instância de uma classe.
+
+```java
+Carro meuCarro = new Carro();
+```
+
+Nesse caso, `meuCarro` é um objeto criado a partir da classe `Carro`.
+
+### Atributos
+
+Atributos representam características de um objeto.
+
+No exemplo anterior:
+
+```java
+String cor;
+String modelo;
+```
+
+são atributos da classe `Carro`.
+
+### Métodos
+
+Métodos representam comportamentos que um objeto pode executar.
+
+No exemplo:
+
+```java
+void acelerar() {
+    System.out.println("O carro está acelerando.");
+}
+```
+
+`acelerar()` é um método.
+
+### Encapsulamento
+
+O encapsulamento permite controlar o acesso aos dados de um objeto, evitando que eles sejam modificados de qualquer maneira.
+
+### Herança
+
+A herança permite que uma classe aproveite características e comportamentos de outra classe.
+
+Por exemplo, uma classe `Carro` poderia herdar características de uma classe mais geral chamada `Veiculo`.
+
+### Polimorfismo
+
+Polimorfismo permite que objetos relacionados possam responder de maneiras diferentes a uma mesma operação.
+
+### Resumo
+
+Os principais conceitos são:
+
+* **Classe:** modelo para criação de objetos.
+* **Objeto:** instância de uma classe.
+* **Atributo:** característica de um objeto.
+* **Método:** comportamento de um objeto.
+* **Encapsulamento:** controle do acesso aos dados.
+* **Herança:** reutilização de características de outra classe.
+* **Polimorfismo:** possibilidade de diferentes comportamentos para uma mesma operação.
+
+---
+
+# Comparação
+
+| Critério                | Prompt 1 | Prompt 2 |
+| ----------------------- | -------: | -------: |
+| Clareza                 |        3 |        5 |
+| Precisão                |        4 |        5 |
+| Relevância              |        3 |        5 |
+| Organização             |        3 |        5 |
+| Adequação ao público    |        2 |        5 |
+| Atendimento ao objetivo |        3 |        5 |
+| Utilidade prática       |        3 |        5 |
+
+O Prompt 2 apresentou uma evolução significativa porque deixou de apenas solicitar uma explicação e passou a informar **quem deveria receber a explicação, qual era o objetivo, qual linguagem utilizar e quais conceitos deveriam ser abordados**.
+
+---
+
+# Prompt 3 - Segundo refinamento
+
+## O que ainda precisava melhorar?
+
+Apesar da melhora proporcionada pelo Prompt 2, ainda seria possível tornar a resposta mais útil para um estudante iniciante.
+
+A explicação dos conceitos de encapsulamento, herança e polimorfismo ainda poderia ser mais detalhada. Também seria interessante apresentar um código um pouco mais completo e explicar seu funcionamento passo a passo.
+
+Outra melhoria seria incluir erros comuns de iniciantes e perguntas ao final para verificar se o estudante realmente compreendeu o conteúdo.
+
+## Hipótese de melhoria
+
+Acredito que a resposta ficará melhor porque o terceiro prompt será mais específico em relação à forma de ensinar o conteúdo. Além de explicar os conceitos, ele solicitará exemplos práticos, explicação de código, erros comuns e perguntas de revisão.
+
+Isso poderá tornar a resposta mais útil para um estudante que está realmente começando a estudar POO.
+
+## Prompt
+
+> Atue como um professor de Programação Orientada a Objetos especializado em ensinar estudantes iniciantes de Sistemas de Informação.
+>
+> Explique POO considerando que o estudante possui pouco ou nenhum conhecimento prévio sobre o assunto.
+>
+> O objetivo é fazer com que o estudante consiga compreender os conceitos fundamentais e reconhecer sua utilização em programas Java.
+>
+> Organize a resposta da seguinte maneira:
+>
+> 1. Explique o que é Programação Orientada a Objetos em linguagem simples.
+> 2. Utilize uma analogia com objetos do cotidiano.
+> 3. Explique os conceitos de classe, objeto, atributo e método.
+> 4. Mostre um exemplo simples em Java envolvendo uma classe e um objeto.
+> 5. Explique o código linha por linha.
+> 6. Explique encapsulamento utilizando um exemplo simples.
+> 7. Explique herança utilizando um exemplo simples.
+> 8. Explique polimorfismo utilizando um exemplo simples.
+> 9. Apresente os erros mais comuns cometidos por iniciantes ao estudar POO.
+> 10. Faça uma comparação resumida entre classe e objeto.
+> 11. Apresente um resumo final dos conceitos.
+> 12. Crie três perguntas para verificar se o estudante compreendeu o conteúdo.
+>
+> Utilize linguagem clara, didática e adequada para um iniciante.
+>
+> Evite explicações excessivamente complexas.
+>
+> Não presuma conhecimentos que não foram informados.
+>
+> Utilize exemplos simples e corretos em Java.
+>
+> Não invente informações. Caso exista alguma informação que precise ser verificada, indique isso claramente.
+>
+> Priorize compreensão e aprendizagem em vez de simplesmente apresentar definições.
+
+## Resultado
+
+### 1. O que é POO?
+
+Programação Orientada a Objetos é um paradigma de programação que organiza o sistema utilizando objetos.
+
+Uma forma simples de imaginar isso é pensar em uma **casa**.
+
+Uma casa possui características, como endereço, número de quartos e cor. Também pode possuir comportamentos relacionados ao sistema, como abrir portas ou acender luzes.
+
+Na POO, podemos representar entidades semelhantes por meio de classes e objetos.
+
+### 2. Classe e objeto
+
+Uma **classe** é como um projeto ou modelo.
+
+Um **objeto** é algo criado a partir desse modelo.
+
+Por exemplo, podemos criar uma classe `Pessoa`:
+
+```java
+class Pessoa {
+    String nome;
+    int idade;
+
+    void apresentar() {
+        System.out.println("Olá, meu nome é " + nome);
+    }
+}
+```
+
+Depois podemos criar um objeto:
+
+```java
+Pessoa pessoa1 = new Pessoa();
+
+pessoa1.nome = "Carlos";
+pessoa1.idade = 20;
+
+pessoa1.apresentar();
+```
+
+### 3. Explicação do código
+
+```java
+class Pessoa {
+```
+
+Cria uma classe chamada `Pessoa`.
+
+```java
+String nome;
+```
+
+Cria um atributo chamado `nome`.
+
+```java
+int idade;
+```
+
+Cria um atributo chamado `idade`.
+
+```java
+void apresentar() {
+```
+
+Cria um método chamado `apresentar`.
+
+```java
+System.out.println("Olá, meu nome é " + nome);
+```
+
+Exibe uma mensagem utilizando o nome armazenado no objeto.
+
+```java
+Pessoa pessoa1 = new Pessoa();
+```
+
+Cria um objeto chamado `pessoa1`.
+
+### 4. Encapsulamento
+
+O encapsulamento permite proteger os dados internos de uma classe.
+
+Por exemplo:
+
+```java
+class Pessoa {
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+```
+
+Nesse caso, o atributo `nome` foi declarado como `private`, evitando acesso direto externo.
+
+Os métodos `getNome()` e `setNome()` são utilizados para acessar ou alterar esse valor.
+
+### 5. Herança
+
+Herança permite que uma classe aproveite características de outra.
+
+```java
+class Animal {
+    void emitirSom() {
+        System.out.println("O animal emitiu um som.");
+    }
+}
+
+class Cachorro extends Animal {
+}
+```
+
+A classe `Cachorro` herda da classe `Animal`.
+
+Isso permite reutilizar comportamentos já existentes.
+
+### 6. Polimorfismo
+
+Polimorfismo permite que classes diferentes apresentem comportamentos diferentes para uma mesma operação.
+
+Por exemplo:
+
+```java
+class Animal {
+    void emitirSom() {
+        System.out.println("Som do animal");
+    }
+}
+
+class Cachorro extends Animal {
+    @Override
+    void emitirSom() {
+        System.out.println("Au au!");
+    }
+}
+
+class Gato extends Animal {
+    @Override
+    void emitirSom() {
+        System.out.println("Miau!");
+    }
+}
+```
+
+Apesar de os dois objetos possuírem o método `emitirSom()`, cada classe apresenta um comportamento diferente.
+
+### 7. Erros comuns de iniciantes
+
+Alguns erros comuns são:
+
+* confundir classe com objeto;
+* não compreender a diferença entre atributo e método;
+* tentar utilizar herança sem necessidade;
+* esquecer modificadores de acesso;
+* criar classes muito grandes;
+* utilizar POO apenas porque a linguagem permite, sem entender o problema que está sendo resolvido.
+
+### 8. Classe x objeto
+
+| Classe                                  | Objeto                                   |
+| --------------------------------------- | ---------------------------------------- |
+| É um modelo                             | É uma instância                          |
+| Define características e comportamentos | Possui os valores dessas características |
+| Exemplo: `Pessoa`                       | Exemplo: `pessoa1`                       |
+
+### 9. Resumo
+
+POO organiza programas utilizando objetos.
+
+Os principais conceitos são:
+
+* **Classe:** modelo.
+* **Objeto:** instância.
+* **Atributo:** característica.
+* **Método:** comportamento.
+* **Encapsulamento:** proteção e controle dos dados.
+* **Herança:** reutilização entre classes.
+* **Polimorfismo:** diferentes comportamentos para uma mesma operação.
+
+### 10. Perguntas para verificar a compreensão
+
+**1. Qual é a diferença entre uma classe e um objeto?**
+
+**2. Para que serve o encapsulamento?**
+
+**3. Como a herança pode ajudar na reutilização de código?**
+
+---
+
+# Comparação final
+
+| Critério                | Prompt 1 | Prompt 2 | Prompt 3 |
+| ----------------------- | -------: | -------: | -------: |
+| Clareza                 |        3 |        5 |        5 |
+| Precisão                |        4 |        5 |        5 |
+| Relevância              |        3 |        5 |        5 |
+| Organização             |        3 |        5 |        5 |
+| Adequação ao público    |        2 |        5 |        5 |
+| Atendimento ao objetivo |        3 |        5 |        5 |
+| Utilidade prática       |        3 |        5 |        5 |
+| **Total**               |   **21** |   **35** |   **35** |
+
+O Prompt 3 apresentou o resultado mais completo. Entretanto, é importante observar que **não necessariamente adicionar mais instruções sempre melhora uma resposta**. O Prompt 3 foi melhor porque as novas instruções estavam relacionadas diretamente ao objetivo da atividade.
+
+O Prompt 2 já apresentava uma boa resposta, mas o Prompt 3 acrescentou elementos que aumentaram sua utilidade para aprendizagem, como explicação linha por linha, erros comuns e perguntas de revisão.
+
+---
+
+# Qual foi a melhoria?
+
+A modificação que teve maior impacto foi a **definição mais precisa do público e da forma como o conteúdo deveria ser ensinado**.
+
+No Prompt 1, a IA recebeu apenas uma pergunta.
+
+No Prompt 2, foram adicionados contexto, público, papel, objetivo e formato.
+
+No Prompt 3, além desses elementos, foram definidos critérios mais específicos para a resposta, como exemplos práticos, explicação de código, erros comuns e perguntas de revisão.
+
+A evolução pode ser representada da seguinte forma:
+
+```text
+PROMPT 1
+   ↓
+Explicação genérica
+   ↓
+Problemas identificados
+   ↓
+PROMPT 2
+   ↓
+Contexto + público + objetivo + formato
+   ↓
+Melhor resposta
+   ↓
+Novas possibilidades de melhoria
+   ↓
+PROMPT 3
+   ↓
+Exemplos + código + explicação + revisão
+   ↓
+Resultado mais adequado
+```
+
+---
+
+# Validação
+
+Uma resposta bem escrita não significa necessariamente que ela esteja correta.
+
+A IA pode produzir uma explicação que parece convincente, mas apresentar algum erro conceitual ou código que não funcione corretamente.
+
+Por isso, a resposta deve ser validada antes de ser utilizada em um trabalho acadêmico.
+
+## Checklist
+
+* [x] A informação pode ser confirmada?
+* [x] Os conceitos apresentados existem?
+* [x] Os dados estão atualizados?
+* [x] A resposta atende ao problema?
+* [x] Existem generalizações?
+* [x] Existem afirmações sem sustentação?
+* [ ] A IA apresentou referências?
+* [ ] As referências existem?
+* [x] Eu consigo explicar a resposta com minhas próprias palavras?
+* [ ] Os exemplos de código foram executados e testados?
+
+Para validar o conteúdo, o estudante pode consultar livros e materiais da disciplina, documentação oficial da linguagem Java e outras fontes acadêmicas confiáveis.
+
+Também é importante executar os códigos apresentados pela IA para verificar se eles realmente funcionam.
+
+---
+
+# Reflexão
+
+## 1. Qual foi a principal diferença entre os prompts?
+
+A principal diferença foi a quantidade e a qualidade das informações fornecidas para orientar a IA. O primeiro prompt era muito genérico, enquanto os outros definiram melhor o público, o objetivo, o formato e o tipo de explicação desejada.
+
+## 2. Quais elementos tiveram maior impacto?
+
+A definição do público e do objetivo teve grande impacto. Informar que a resposta seria destinada a um iniciante ajudou a direcionar a linguagem e os exemplos utilizados.
+
+## 3. Um prompt maior é necessariamente melhor?
+
+Não. Um prompt maior não é automaticamente melhor. O mais importante é fornecer informações relevantes para o objetivo. Instruções desnecessárias podem deixar o prompt confuso e até prejudicar a resposta.
+
+## 4. O que ocorre quando o objetivo não é claro?
+
+Quando o objetivo não está claro, a IA pode produzir uma resposta genérica, que pode até estar correta, mas não atender exatamente à necessidade do usuário.
+
+## 5. Quais informações são indispensáveis?
+
+Considero importantes o objetivo, o contexto, o público, a tarefa, o formato esperado e as principais restrições.
+
+## 6. Como essa habilidade pode ser utilizada profissionalmente?
+
+Um profissional de Ciência da Computação pode utilizar bons prompts para auxiliar na análise de código, documentação, testes, estudos, desenvolvimento de sistemas e pesquisa de soluções para problemas técnicos.
+
+## 7. Quais riscos existem ao confiar automaticamente na IA?
+
+Existe o risco de utilizar informações incorretas, códigos com erros, referências inexistentes ou conclusões que não foram verificadas. Por isso, o conhecimento do profissional continua sendo importante.
+
+## 8. O Prompt 3 poderia ficar pior que o Prompt 2?
+
+Sim. Se fossem adicionadas muitas instruções sem relação com o objetivo, a resposta poderia ficar excessivamente longa, confusa ou perder o foco. O refinamento deve acrescentar informações úteis, e não simplesmente aumentar o tamanho do prompt.
+
+## 9. Muitas instruções podem prejudicar a resposta?
+
+Sim. Quando existem instruções demais ou contraditórias, a IA pode ter dificuldade para priorizar o que é mais importante. Por isso, é necessário manter as instruções organizadas e relacionadas ao objetivo.
+
+## 10. Como verificar a correção técnica?
+
+Eu verificaria a informação em materiais da disciplina, documentação oficial, livros e fontes confiáveis. No caso dos códigos em Java, também executaria os exemplos para verificar se funcionam corretamente.
+
+---
+
+# Take Away
+
+> **“Um bom prompt não é simplesmente um prompt longo. Ele precisa ser claro, específico, contextualizado e direcionado para um objetivo.”**
+
+## Cinco recomendações
+
+1. **Defina claramente o objetivo** que deseja alcançar.
+2. **Informe o contexto** necessário para a IA compreender a situação.
+3. **Defina o público** para adequar a linguagem e a profundidade da resposta.
+4. **Especifique o formato e os critérios** esperados para o resultado.
+5. **Analise e valide a resposta**, em vez de aceitá-la automaticamente como verdadeira.
+
+---
+
+# Desafio final
+
+Imagine que um colega diga:
+
+> “Meu prompt não funcionou. A IA respondeu errado.”
+
+Antes de modificar o prompt, eu faria as seguintes perguntas:
+
+### 1.
+
+**O objetivo do prompt estava claramente definido?**
+
+### 2.
+
+**Você forneceu contexto suficiente para a IA compreender o problema?**
+
+### 3.
+
+**A informação utilizada no prompt estava correta e atualizada?**
+
+### 4.
+
+**A resposta realmente estava errada ou apenas não atendeu ao que você esperava?**
+
+### 5.
+
+**Você verificou a resposta em alguma fonte confiável ou realizou algum teste?**
+
+### Pergunta final
+
+O problema pode estar no **prompt, na resposta da IA, nas informações utilizadas ou na forma como o usuário avaliou o resultado**.
+
+Por isso, não é correto assumir imediatamente que somente o prompt foi o problema. É necessário analisar todo o processo, identificar onde ocorreu a falha e então realizar o refinamento necessário.
+
+---
+
+# Conclusão
+
+A atividade mostrou que a Engenharia de Prompt é um processo de melhoria contínua. Um prompt inicial pode produzir uma resposta correta, mas genérica. Ao adicionar informações relevantes sobre contexto, público, objetivo, formato e critérios, é possível direcionar melhor a IA.
+
+O processo pode ser representado como:
+
+```text
+PROMPT
+   ↓
+RESPOSTA
+   ↓
+ANÁLISE
+   ↓
+REFINAMENTO
+   ↓
+NOVA RESPOSTA
+   ↓
+COMPARAÇÃO
+   ↓
+VALIDAÇÃO
+```
+
+Durante o desenvolvimento da atividade, foi possível perceber que o refinamento não significa simplesmente deixar o prompt maior. O mais importante é identificar quais informações estão faltando e acrescentar instruções que realmente contribuam para alcançar o objetivo.
+
+Para um profissional de Sistemas de Informação, essa habilidade pode ser útil em diversas situações, como programação, análise de sistemas, criação de testes, documentação e aprendizagem de novas tecnologias.
+
+Porém, a utilização da IA precisa ser acompanhada de pensamento crítico. A ferramenta pode auxiliar na aprendizagem e na resolução de problemas, mas suas respostas devem ser analisadas e verificadas.
+
+Dessa forma, a Engenharia de Prompt não deve ser utilizada para fazer a IA pensar no lugar do usuário. O objetivo é **melhorar a interação com a IA para que o usuário consiga pensar, analisar, aprender e tomar decisões melhores**.
